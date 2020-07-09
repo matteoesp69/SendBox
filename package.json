@@ -1,0 +1,26 @@
+{
+  "name": "Gulp4-Bootstrap-Sass-BrowserSync",
+  "version": "1.0.0",
+  "description": "git branch learning-github   git checkout learning-github   git status   git add -A   git commit -m \"add heading\"   git push origin learning-github   git checkout master   git pull origin master   git merge learning-github   git push origin master   git branch   git branch -d learning-github   git branch -a   git push origin --delete learning-github   git branch -a   git push origin master",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Matteo Esposto",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.1",
+    "@popperjs/core": "^2.4.4",
+    "bootstrap": "^4.5.0",
+    "bootstrap-icons": "^1.0.0-alpha5",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "rfs": "^9.0.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
