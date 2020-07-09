@@ -1,7 +1,7 @@
 {
-  "name": "Gulp4-Bootstrap-Sass-BrowserSync",
+  "name": "send-box",
   "version": "1.0.0",
-  "description": "git branch learning-github   git checkout learning-github   git status   git add -A   git commit -m \"add heading\"   git push origin learning-github   git checkout master   git pull origin master   git merge learning-github   git push origin master   git branch   git branch -d learning-github   git branch -a   git push origin --delete learning-github   git branch -a   git push origin master",
+  "description": "Simple starte template",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
