@@ -1,0 +1,1 @@
+var ref=$("#button-a"),popup=$("#popup");popup.hide(),ref.click(function(){popup.show();new Popper(ref,popup,{placement:"top",onCreate:function(o){console.log(o)},modifiers:{flip:{behavior:["left","right","top","bottom"]},offset:{enabled:!0,offset:"0,10"}}})});

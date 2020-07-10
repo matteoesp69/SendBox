@@ -14,6 +14,7 @@
   <dt>Dev Dependencies</dt>
   <dd> - Gulp 4.02<dd>
   <dd> - Gulp-Sass 4.1.0<dd>
+  <dd> - Gulp-Uglify 3.0.2</dd>
   <dd> - Browser-Sync 2.25.7<dd>
 </dl>
 
