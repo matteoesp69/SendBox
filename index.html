@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
   <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
-  <link rel="stylesheet" href="dist/css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -83,7 +83,31 @@
         <use xlink:href="/node_modules/bootstrap-icons/bootstrap-icons.svg#exclamation-triangle" x="0" y="0" /></svg> bootstrap</p>
     <p><i class="fab fa-font-awesome"> awesome</i></p>
   </footer>
-  <script src="dist/js/all.js"></script>
+  <script src="js/all.js"></script>
+  <script>
+    // Popper https://popper.js.org/
+    var ref = $('#button-a');
+    var popup = $('#popup');
+    popup.hide();
+    ref.click(function () {
+      popup.show();
+      var popper = new Popper(ref, popup, {
+        placement: 'top',
+        onCreate: function (data) {
+          console.log(data);
+        },
+        modifiers: {
+          flip: {
+            behavior: ['left', 'right', 'top', 'bottom']
+          },
+          offset: {
+            enabled: true,
+            offset: '0,10'
+          }
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

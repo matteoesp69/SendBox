@@ -13,6 +13,7 @@
 <dl>
   <dt>Dev Dependencies</dt>
   <dd> - Gulp 4.02<dd>
+  <dd> - Gulp-Sourcemaps 2.6.5</dd>
   <dd> - Gulp-Sass 4.1.0<dd>
   <dd> = Gulp-Concat 2.6.1</dd>
   <dd> - Gulp-Uglify 3.0.2</dd>

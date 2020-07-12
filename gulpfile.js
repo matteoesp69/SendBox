@@ -2,20 +2,23 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
+const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
 
 // File path
 
 const files = {
-  sassPath: 'src/scss/**/*.scss',
-  jsPath: 'src/js/**/*.js'
+  sassPath: 'app/scss/**/*.scss',
+  jsPath: 'app/js/**/*.js'
 }
 
 // Compile css into scss
 function styleTask() {
   return gulp.src(files.sassPath)
+    .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('dist/css'))
+    .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest('css'))
     .pipe(browserSync.stream());
 }
 
@@ -23,20 +26,14 @@ function styleTask() {
 function jsTask() {
   return gulp.src([files.jsPath,
     // Import all bootstrap 
-    // 'node_modules/jquery/dist/jquery.js',
-    //'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
-    //'node_modules/popper.js/dist/umd/popper.js'
-
-    // Import just the scrit you need
-    'node_modules/jquery/dist/jquery.slim.js',
+    'node_modules/jquery/dist/jquery.js',
+    'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
     'node_modules/popper.js/dist/umd/popper.js',
-    'node_modules/bootstrap/js/dist/util.js',
-    'node_modules/bootstrap/js/dist/dropdown.js',
     'app/js/custom.js'
   ])
     .pipe(concat('all.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('js'))
     .pipe(browserSync.stream());
 }
 
@@ -53,6 +50,6 @@ function watch() {
   gulp.watch('app/js/**/*.js', jsTask)
 }
 
-exports.style = styleTask;
+exports.styleTask = styleTask;
 exports.jsTask = jsTask;
 exports.watch = watch;
