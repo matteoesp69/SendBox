@@ -31,7 +31,8 @@ function jsTask() {
     'node_modules/jquery/dist/jquery.slim.js',
     'node_modules/popper.js/dist/umd/popper.js',
     'node_modules/bootstrap/js/dist/util.js',
-    'node_modules/bootstrap/js/dist/dropdown.js'
+    'node_modules/bootstrap/js/dist/dropdown.js',
+    'app/js/custom.js'
   ])
     .pipe(concat('all.js'))
     .pipe(uglify())
@@ -47,9 +48,9 @@ function watch() {
     }
   });
 
-  gulp.watch('src/scss/**/*.scss', styleTask)
+  gulp.watch('app/scss/**/*.scss', styleTask)
   gulp.watch('./*.html').on('change', browserSync.reload);
-  gulp.watch('src/js/**/*.js', jsTask)
+  gulp.watch('app/js/**/*.js', jsTask)
 }
 
 exports.style = styleTask;
