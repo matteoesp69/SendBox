@@ -1,3 +1,7 @@
+# Quick & References
+
+---
+
 - GIT - FASTER EXAMPLE
 - Toolkit API
 - Libraries
@@ -6,10 +10,7 @@
 - Repository
 - Setting up Gulp 4 for Bootstrap, SASS, and BrowserSync
 - Typography \ Tools
-
----
-
-<h1>Command & References</h1>
+- Issues
 
 ---
 
@@ -71,3 +72,6 @@
   - https://blog.spoongraphics.co.uk/articles/25-classic-fonts-that-will-last-a-whole-design-career
   - https://www.modularscale.com/?20,18&px&1.333
   - https://app.typeanything.io/
+
+<h2>Issues</h2>
+https://stackoverflow.com/questions/21961142/concat-scripts-in-order-with-gulp

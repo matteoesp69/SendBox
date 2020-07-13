@@ -9,7 +9,7 @@ const browserSync = require('browser-sync').create();
 
 const files = {
   sassPath: 'app/scss/**/*.scss',
-  jsPath: 'app/js/**/*.js'
+  jsPath: 'app/js/**/!(custom)*.js'
 }
 
 // Compile css into scss
