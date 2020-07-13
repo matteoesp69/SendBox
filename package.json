@@ -1,14 +1,24 @@
 {
   "name": "send-box",
   "version": "1.0.0",
-  "description": "Simple starte template",
-  "main": "index.js",
+  "description": "Simple started template",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matteoesp69/SendBox.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "gulp",
+    "html",
+    "css",
+    "javascript"
+  ],
   "author": "Matteo Esposto",
   "license": "MIT",
+  "homepage": "https://github.com/matteoesp69/SendBox/blob/master/README.md",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.1",
     "@popperjs/core": "^2.4.4",
