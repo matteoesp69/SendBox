@@ -7,7 +7,7 @@
   <li>Single HTML page to demonstrate how everything works</li>
   <li>Font family Roboto & rel attribute preconect</li> 
   <li>Include Bootstrap (v4.5.0 @latest) source files use npm</li>
-  <li>npm scripts see (package.json) for compiling with Sass, watching task to started a basic local server or on ip address (if you have the network system) or localhost:300</li>
+  <li>npm scripts see (package.json) for compiling with Sass, watching task to started a basic local server or on ip address (if you have the network system) or localhost:3000</li>
   <li>Option 1. Import all of Bootstrap's CSS</li>
   <li>Option 2. Import just the Bootstrap's styles you need</li>
   <li>Option 1. Import all of Bootstrap's script (gulp-concat)</li>
