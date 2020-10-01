@@ -12,6 +12,7 @@
   <li>Option 2. Import just the Bootstrap's styles you need</li>
   <li>Option 1. Import all of Bootstrap's script (gulp-concat)</li>
   <li>Option 2. Import just the Bootstrap's script you need</li>
+  <li>testRest.http</li>
 </ul>
 
 <h4>Frameworks & Libraries included</h4>
